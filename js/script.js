@@ -43,3 +43,10 @@ document.getElementById("Tatto").addEventListener('click', function(){
     window.open("https://felipelacroestatoo.github.io/", "_blank");
 });
 
+document.getElementById("todo").addEventListener('click', function(){
+    window.open("https://github.com/Gimedeiros-77/todo-list/tree/main/todo");
+});
+
+document.getElementById("hamb").addEventListener('click',function(){
+    window.open("https://cardapio-ten-nu.vercel.app/");
+});
