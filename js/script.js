@@ -1,3 +1,6 @@
+
+const sendMensage = document.getElementById('enviar_mensagem')
+
 const menuHamburguer = document.querySelector('.menu-hamburguer')
 menuHamburguer.addEventListener('click', () => {
     toggleMenu();
@@ -50,3 +53,8 @@ document.getElementById("todo").addEventListener('click', function(){
 document.getElementById("hamb").addEventListener('click',function(){
     window.open("https://cardapio-ten-nu.vercel.app/");
 });
+
+
+sendMensage.addEventListener('click', function(){
+    alert('teste carai');
+})
