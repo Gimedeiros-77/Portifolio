@@ -18,12 +18,9 @@ function toggleMenu() {
     }
 }
 
-//document.getElementById("Download CV").addEventListener('click', function(){
-    //const link = document.createElement('a');
-    //link.href = 'documents/Giovanni pdf-1.pdf';
-    //link.download = 'Giovanni pdf-1.pdf';
-    //link.click();
-//});
+document.getElementById("crono").addEventListener('click', function(){
+    window.open("https://github.com/Gimedeiros-77/cronometro");
+});
 
 document.getElementById("linkedin").addEventListener('click', function(){
     window.open("https://www.linkedin.com/in/giovanni-santos-025425267/", "_blank");
