@@ -53,7 +53,7 @@ document.getElementById("hamb").addEventListener('click',function(){
 
 
 sendMensage.addEventListener('click', function(){
-    alert('teste carai');
+    alert('Ops!!! Essa parte ainda não foi configurada, mas já estamos trabalhando para isso');
 })
 
 document.getElementById('Download CV').addEventListener('click', function(event){
