@@ -18,12 +18,12 @@ function toggleMenu() {
     }
 }
 
-document.getElementById("Download CV").addEventListener('click', function(){
-    const link = document.createElement('a');
-    link.href = 'documents/Giovanni pdf-1.pdf';
-    link.download = 'Giovanni pdf-1.pdf';
-    link.click();
-});
+//document.getElementById("Download CV").addEventListener('click', function(){
+    //const link = document.createElement('a');
+    //link.href = 'documents/Giovanni pdf-1.pdf';
+    //link.download = 'Giovanni pdf-1.pdf';
+    //link.click();
+//});
 
 document.getElementById("linkedin").addEventListener('click', function(){
     window.open("https://www.linkedin.com/in/giovanni-santos-025425267/", "_blank");
@@ -58,3 +58,23 @@ document.getElementById("hamb").addEventListener('click',function(){
 sendMensage.addEventListener('click', function(){
     alert('teste carai');
 })
+
+document.getElementById('Download CV').addEventListener('click', function(event){
+    event.preventDefault();
+
+    const fileUrl = 'documents/Giovanni pdf-1.pdf';
+
+    fetch(fileUrl)
+    .then(Response => Response.blob())
+    .then(blob => {
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = 'documents/Giovanni pdf-1.pdf';
+        link.click();
+
+        window.URL.revokeObjectURL(link.href);
+    })
+    .catch(error => {
+        console.error('Erro ao baixar o arquivo:', error);
+    });
+});
