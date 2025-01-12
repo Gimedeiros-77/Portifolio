@@ -52,9 +52,9 @@ document.getElementById("hamb").addEventListener('click',function(){
 });
 
 
-sendMensage.addEventListener('click', function(){
-    alert('Ops!!! Essa parte ainda não foi configurada, mas já estamos trabalhando para isso');
-})
+//sendMensage.addEventListener('click', function(){
+    //alert('Ops!!! Essa parte ainda não foi configurada, mas já estamos trabalhando para isso');
+//})
 
 document.getElementById('Download CV').addEventListener('click', function(event){
     event.preventDefault();
@@ -75,3 +75,15 @@ document.getElementById('Download CV').addEventListener('click', function(event)
         console.error('Erro ao baixar o arquivo:', error);
     });
 });
+
+function sendMail(){
+    let parms = {
+        name : document.getElementById("nome").value,
+        email : document.getElementById("e-mail").value,
+        number : document.getElementById("number").value,
+        subject : document.getElementById("assunto").value,
+        message : document.getElementById("mensagem").value,
+    }
+
+    emailjs.send("service_a3smeuq","template_oyt2yqp",parms).then(alert("E-mail enviado!!!!"))
+}

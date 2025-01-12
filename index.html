@@ -157,16 +157,16 @@
 
         <form>
             <div class="input-box">
-                <input type="text" placeholder="Nome Completo">
-                <input type="email" placeholder="E-Mail">
+                <input type="text" placeholder="Nome Completo" id="nome">
+                <input type="email" placeholder="E-Mail" id="e-mail">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Número de telefone">
-                <input type="text" placeholder="Assunto">
+                <input type="number" placeholder="Número de telefone" id="number">
+                <input type="text" placeholder="Assunto" id="assunto">
             </div>
-            <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
+            <textarea cols="30" rows="8" placeholder="Mensagem" id="mensagem"></textarea>
 
-            <a href="#" class="btn" id="enviar_mensagem">Enviar Mensagem</a>
+            <a href="#" class="btn" id="enviar_mensagem" onclick="sendMail()">Enviar Mensagem</a>
         </form>
       </section>
      <!-- /contact section -->
@@ -189,4 +189,14 @@
      <footer>Copyrigth &copy; 2025 by &lt;/Giovanni&gt;,ALL rigths Reserved.</footer>
 </body>
 <script src="js/script.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "T_1lXY9nyVcG459jf",
+      });
+   })();
+</script>
 </html>
