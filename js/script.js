@@ -78,9 +78,9 @@ document.getElementById('Download CV').addEventListener('click', function(event)
 
 function sendMail(){
     let parms = {
-        name : document.getElementById("nome").value,
-        email : document.getElementById("e-mail").value,
-        number : document.getElementById("number").value,
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        phone_number : document.getElementById("number").value,
         subject : document.getElementById("assunto").value,
         message : document.getElementById("mensagem").value,
     }
