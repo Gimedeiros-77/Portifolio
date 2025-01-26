@@ -51,11 +51,6 @@ document.getElementById("hamb").addEventListener('click',function(){
     window.open("https://cardapio-ten-nu.vercel.app/");
 });
 
-
-//sendMensage.addEventListener('click', function(){
-    //alert('Ops!!! Essa parte ainda não foi configurada, mas já estamos trabalhando para isso');
-//})
-
 document.getElementById('Download CV').addEventListener('click', function(event){
     event.preventDefault();
 
@@ -87,3 +82,4 @@ function sendMail(){
 
     emailjs.send("service_a3smeuq","template_oyt2yqp",parms).then(alert("E-mail enviado!!!!"))
 }
+
