@@ -358,7 +358,7 @@ footer{
     transform: translate(0, -0.65rem) rotate(45deg);
 }
 
-@media (min-width: 0px) {
+@media (max-width: 450px) {
     .menu-hamburguer{
         display: block;
     }
