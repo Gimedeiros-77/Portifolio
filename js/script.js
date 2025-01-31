@@ -51,6 +51,10 @@ document.getElementById("hamb").addEventListener('click',function(){
     window.open("https://cardapio-ten-nu.vercel.app/");
 });
 
+document.getElementById("js_alura").addEventListener('click',function(){
+    window.open("https://github.com/Gimedeiros-77/logica-js-projeto_inicial")
+})
+
 document.getElementById('Download CV').addEventListener('click', function(event){
     event.preventDefault();
 

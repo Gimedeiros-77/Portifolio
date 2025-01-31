@@ -11,6 +11,7 @@
     --color-03:#7950f2;
     --color-04:#c00000;
     --color-05:#232323;
+    --color-06:#000000;
 }
 
 
@@ -46,8 +47,8 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-image: url("../img/Codigo_php.jpg");
-    opacity: 80%;
+    background-image: url("../img/image.png");
+    opacity: 98%;
 }
 
 .logo{
@@ -362,7 +363,7 @@ footer{
     transform: translate(0, -0.65rem) rotate(45deg);
 }
 
-@media (max-width: 410px) {
+@media (min-width: 0px) {
     .menu-hamburguer{
         display: block;
     }
