@@ -415,6 +415,14 @@ footer{
         width: 100%;
     }
 
+    .Portifolio-layer{
+        font-size: smaller;
+    }
+
+    .Portifolio-layer p{
+        display: none;
+    }
+
 }
 
 @media (min-width: 576px) {
