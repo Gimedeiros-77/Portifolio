@@ -52,7 +52,7 @@ document.getElementById("hamb").addEventListener('click',function(){
 });
 
 document.getElementById("js_alura").addEventListener('click',function(){
-    window.open("https://github.com/Gimedeiros-77/logica-js-projeto_inicial")
+    window.open("https://github.com/Gimedeiros-77/js-curso-2-aula1")
 })
 
 document.getElementById('Download CV').addEventListener('click', function(event){
