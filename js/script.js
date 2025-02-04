@@ -55,6 +55,10 @@ document.getElementById("js_alura").addEventListener('click',function(){
     window.open("https://github.com/Gimedeiros-77/js-curso-2-aula1")
 })
 
+document.getElementById("repo_spot").addEventListener('click',function(){
+    window.open("https://github.com/Gimedeiros-77/spotify-imersao-alura")
+})
+
 document.getElementById('Download CV').addEventListener('click', function(event){
     event.preventDefault();
 
