@@ -9,4 +9,3 @@ Autor
 Giovanni Medeiros 🚀
 Feito por Giovanni Medeiros 👋🏽 Entre em contato!
 
-Twitter Badge Linkedin Badge Gmail Badge
