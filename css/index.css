@@ -48,7 +48,6 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-image: url("../img/image.png");
     opacity: 98%;
 }
 
