@@ -7,4 +7,4 @@
 Autor
 
 Giovanni Medeiros 🚀
-Feito por Giovanni Medeiros 👋🏽 Entre em contato!
+
