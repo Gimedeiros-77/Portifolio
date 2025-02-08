@@ -59,6 +59,10 @@ document.getElementById("repo_spot").addEventListener('click',function(){
     window.open("https://github.com/Gimedeiros-77/spotify-imersao-alura")
 })
 
+document.getElementById("controle").addEventListener('click',function(){
+    window.open("https://github.com/Gimedeiros-77/Controle_despesas")
+})
+
 document.getElementById('Download CV').addEventListener('click', function(event){
     event.preventDefault();
 
