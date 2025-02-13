@@ -141,7 +141,7 @@ span{
 }
 
 .services h2,
-.Portifolio h2,
+.Portfolio h2,
 .contact h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -213,12 +213,12 @@ span{
     cursor: pointer;
 }
 
-.Portifolio-container{
+.Portfolio-container{
     display: grid;
     gap: 1.2rem;
 }
 
-.Portifolio-box{
+.Portfolio-box{
     position: relative;
     border-radius: 0.6rem;
     box-shadow: 0 0 0.6rem var(--bg-color-01);
@@ -226,16 +226,16 @@ span{
     display:flex;
 }
 
-.Portifolio-box img{
+.Portfolio-box img{
     width: 100%;
     transition: 0.5s ease;
 }
 
-.Portifolio-box img:hover{
+.Portfolio-box img:hover{
     transform: scale(1.1);
 }
 
-.Portifolio-box .Portifolio-layer{
+.Portfolio-box .Portfolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -252,15 +252,15 @@ span{
     transition: 0.5s ease;
 }
 
-.Portifolio-box:hover .Portifolio-layer{
+.Portfolio-box:hover .Portfolio-layer{
     transform: translateY(0);
 }
 
-.Portifolio-layer h4{
+.Portfolio-layer h4{
     font-size: 1.8rem;
 }
 
-.Portifolio-layer a{
+.Portfolio-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -270,11 +270,11 @@ span{
     border-radius: 50%;
 }
 
-.Portifolio-layer p{
+.Portfolio-layer p{
    margin: 0.2rem 0 0.5rem; 
 }
 
-.Portifolio-layer a i {
+.Portfolio-layer a i {
     font-size: 1.2rem;
     color: var(--bg-color-02);
 }
@@ -313,7 +313,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 1.2rem;
-    background-color: black;
+    background-color: var(--bg-color-01);
     color: var(--color-03);
 }
 
@@ -417,11 +417,11 @@ footer{
         width: 100%;
     }
 
-    .Portifolio-layer{
+    .Portfolio-layer{
         font-size: 10px;
     }
 
-    .Portifolio-layer p{
+    .Portfolio-layer p{
         display: none;
     }
 
