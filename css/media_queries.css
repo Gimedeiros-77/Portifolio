@@ -42,7 +42,7 @@
         margin-bottom: 2rem;
     }
 
-    .Portifolio-container{
+    .Portfolio-container{
         grid-template-columns: auto auto;
     }
 
@@ -79,7 +79,7 @@
         font-size: 2rem; 
      }
 
-     .Portifolio-container{
+     .Portfolio-container{
         grid-template-columns: auto auto auto;
     }
 }
