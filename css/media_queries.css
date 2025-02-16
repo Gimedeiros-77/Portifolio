@@ -82,5 +82,9 @@
      .Portfolio-container{
         grid-template-columns: auto auto auto;
     }
+
+    .services-container{
+        flex-direction: column;
+    }
 }
 
