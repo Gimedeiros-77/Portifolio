@@ -78,11 +78,11 @@ header{
     
 }
 
-.nav a:hover, .nav-responsive a:hover {
+/* .nav a:hover, .nav-responsive a:hover {
     color: var(--text-color);
     text-shadow: 1px 18px  #ffffff;
     background-color: #000000;
-}
+} */
 
 section{
     min-height: 100vh;
@@ -375,3 +375,7 @@ input [type="number"]{
     -moz-appearance: textfield;
 }
 
+.nav-responsive.active {
+    display: block;
+    text-align: right;
+}
