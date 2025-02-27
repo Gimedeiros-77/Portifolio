@@ -1,3 +1,9 @@
+// Inicializa o EmailJS
+(function() {
+    emailjs.init("T_1lXY9nyVcG459jf");
+})();
+
+// Função para abrir o menu hamburguer
 const menuHamburguer = document.querySelector('.menu-hamburguer');
 const nav = document.querySelector('.nav-responsive');
 
@@ -10,7 +16,11 @@ menuHamburguer.addEventListener('click', () => {
 function abrirLink(id, url) {
     const elemento = document.getElementById(id);
     if (elemento) {
-        elemento.addEventListener('click', () => window.open(url, "_blank"));
+        elemento.addEventListener('click', () => {
+            window.open(url, "_blank");
+            nav.classList.remove('active'); // Fecha o menu ao clicar no link
+            menuHamburguer.classList.remove('change'); // Reseta o ícone do menu
+        });
     }
 }
 
@@ -36,7 +46,12 @@ if (downloadCV) {
         const fileUrl = 'documents/Giovanni pdf-1.pdf';
 
         fetch(fileUrl)
-            .then(response => response.blob())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Arquivo não encontrado');
+                }
+                return response.blob();
+            })
             .then(blob => {
                 const link = document.createElement('a');
                 link.href = window.URL.createObjectURL(blob);
@@ -59,14 +74,29 @@ function sendMail() {
     let subject = document.getElementById("assunto").value.trim();
     let message = document.getElementById("mensagem").value.trim();
 
+    // Validação de campos
     if (!name || !email || !phone_number || !subject || !message) {
         alert("Por favor, preencha todos os campos antes de enviar.");
+        return;
+    }
+
+    // Validação de e-mail
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Por favor, insira um e-mail válido.");
         return;
     }
 
     let params = { name, email, phone_number, subject, message };
 
     emailjs.send("service_a3smeuq", "template_oyt2yqp", params)
-        .then(() => alert("E-mail enviado com sucesso!"))
-        .catch(error => console.error("Erro ao enviar e-mail:", error));
+        .then(() => {
+            alert("E-mail enviado com sucesso!");
+            // Limpa os campos do formulário
+            document.querySelector('form').reset();
+        })
+        .catch(error => {
+            console.error("Erro ao enviar e-mail:", error);
+            alert("Ocorreu um erro ao enviar o e-mail. Tente novamente.");
+        });
 }
