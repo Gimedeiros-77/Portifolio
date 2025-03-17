@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;0,400;0,500;0,600;0,700;0,800;0&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --main-color: #740021;
@@ -28,7 +28,7 @@
 }
 
 html{
-    font-family: "Poppins", serif;
+    font-family: "Krona One", serif;
     font-size: 16px;
 }
 
