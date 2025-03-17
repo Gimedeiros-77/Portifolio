@@ -158,8 +158,8 @@ span{
     padding: 2rem 1rem 2.5rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: solid 0.15rem var(--color-03);
-    background:linear-gradient(var(--color-06),var(--bg-color-02),var(--bg-color-01));
+    border: solid 0.1rem var(--color-04);
+    background:var(--color-00);
     transition: 0.5s ease;
 }
 
@@ -381,53 +381,3 @@ input [type="number"]{
     text-align: right;
 }
 
-.card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.9s;
-    transform-style: preserve-3d; /* Mantém a perspectiva 3D */
-}
-
-.services-box:hover .card-inner {
-    transform: rotateY(180deg); /* Rotaciona o card ao passar o mouse */
-}
-
-.card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Oculta o lado de trás do card */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem 2.5rem;
-    border-radius: 1.2rem;
-    background-color: var(--bg-color-02);
-}
-
-.card-back {
-    transform: rotateY(180deg); /* Rotaciona o lado de trás */
-}
-
-.card-front i {
-    font-size: 4.3rem;
-    color: var(--main-color);
-}
-
-.card-front h3 {
-    font-size: 1.5rem;
-}
-
-.card-front p {
-    margin: 0.5rem;
-    letter-spacing: 0.1rem;
-    transition: opacity 0.6s ease; /* Transição suave para a opacidade */
-}
-
-.social-media {
-    display: flex; /* Mostra os ícones */
-    justify-content: center; /* Centraliza os ícones */
-    margin-top: 1rem; /* Espaçamento acima dos ícones */
-}
