@@ -65,9 +65,7 @@
 
 @media (min-width: 576px) {
 
-    html{
-        font-family: "Montserrat";
-    }
+    
     .home-img, .about-img {
         width: 65%;
         max-width: 65%;
