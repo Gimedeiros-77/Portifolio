@@ -20,7 +20,7 @@ abrirLink("linkedin", "https://www.linkedin.com/in/giovanni-santos-025425267/");
 abrirLink("whatsapp", "https://wa.me/5517982016839?text=Ol%C3%A1%2C%20vi%20seu%20Portf%C3%B3lio...%20Poderiamos%20conversar%3F");
 abrirLink("instagram", "https://www.instagram.com/gi_santosxs?igsh=dDltbWRubTEzdGM4&utm_source=qr");
 abrirLink("github", "https://github.com/Gimedeiros-77");
-abrirLink("Tatto", "https://felipelacroestatoo.github.io/");
+abrirLink("Tatto", "https://felipe-lilac.vercel.app/");
 abrirLink("todo", "https://github.com/Gimedeiros-77/todo-list/tree/main/todo");
 abrirLink("hamb", "https://cardapio-ten-nu.vercel.app/");
 abrirLink("js_alura", "https://github.com/Gimedeiros-77/js-curso-2-aula1");
