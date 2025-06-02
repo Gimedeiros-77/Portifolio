@@ -333,13 +333,13 @@ footer{
     font-size: 2rem;
     color: var(--main-color);
     transition: 0.5s ease;
-    padding-top: 3rem;
+    margin-top: 15px;
 }
 
 .social-media a:hover{
     background-color: var(--main-color);
     color: var(--bg-color-02);
-    box-shadow: 0 0 0.3rem var(--main-color);
+    box-shadow: 0 0 0.6rem var(--main-color);
 }
 
 .menu-hamburguer{
