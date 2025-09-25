@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --main-color: #740021;
+    --main-color: #dc9909;
     --text-color:#ffffff;
     --bg-color-01:#1E201E;
     --bg-color-02:#3C3D37;
@@ -313,7 +313,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
+    padding: 0.3rem;
     background-color: var(--color-06);
     color: var(--color-03);
 }
