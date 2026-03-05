@@ -1,63 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Giovanni M. dos Santos — Desenvolvedor Front-end, Back-end e Analista de Dados especializado em HTML, CSS, JavaScript, React e Power BI.">
     <title>Portfólio - Giovanni Santos</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/javascript-logo-24.png" type="image/png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media_queries.css">
-    <link rel="icon" href="/img/javascript-logo-24.png" type="image/png">
 </head>
+
 <body>
 
+    <!-- ===== Header / Navegação ===== -->
     <header>
-        <a href="#" class="logo">Portfólio</a>
-        <div class="nav">
-            <a href="#home">Inicio</a>
-            <a href="#services">Serviços</a>
-            <a href="#Portifolio">Portfólio</a>
-            <a href="#certicações">Certificações</a>
-            <a href="#contact">Contato</a> 
-        </div>
+        <a href="#" class="logo" aria-label="Ir para o topo">Portfólio</a>
 
-        <div class="nav-responsive">
+        <nav class="nav" aria-label="Navegação principal">
             <a href="#home">Inicio</a>
             <a href="#services">Serviços</a>
             <a href="#Portifolio">Portfólio</a>
             <a href="#certicações">Certificações</a>
             <a href="#contact">Contato</a>
-        </div>
+        </nav>
 
-        <div class="menu-hamburguer">
+        <nav class="nav-responsive" aria-label="Navegação mobile">
+            <a href="#home">Inicio</a>
+            <a href="#services">Serviços</a>
+            <a href="#Portifolio">Portfólio</a>
+            <a href="#certicações">Certificações</a>
+            <a href="#contact">Contato</a>
+        </nav>
+
+        <button class="menu-hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-        </div>
+        </button>
     </header>
 
     <main>
-        <!-- home section  -->
+
+        <!-- ===== Seção Home ===== -->
         <section class="home" id="home">
             <div class="home-content">
                 <h3>Olá, Eu sou</h3>
                 <h1>Giovanni <span>M.</span> dos Santos</h1>
-                <h3>Front-end <span>Dev</span> |  Back-end <span>Dev</span></h3>
+                <h3>Front-end <span>Dev</span> | Back-end <span>Dev</span></h3>
 
-                <p>Sou estudante de Engenharia da Computação, com foco em desenvolvimento web e aplicações interativas. Minhas principais habilidades incluem HTML, CSS e JavaScript, que utilizo para criar interfaces modernas, responsivas e dinâmicas.
+                <p>Sou estudante de Engenharia da Computação, com foco em desenvolvimento web e aplicações interativas.
+                    Minhas principais habilidades incluem HTML, CSS e JavaScript, que utilizo para criar interfaces
+                    modernas, responsivas e dinâmicas.
 
-                    Tenho conhecimentos em React.js, React Native e Expo, o que me permite desenvolver soluções completas para web e dispositivos móveis. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades, com o objetivo de criar soluções eficientes, inovadoras e centradas na experiência do usuário.
-                    
-                    Atualmente, participo de um curso promovido pela Oracle em parceria com a Alura, voltado para formação full stack. Esse programa oferece uma base sólida tanto em front-end quanto em back-end, reforçando minhas competências nas duas áreas.
-                    
-                    Além disso, possuo experiência com Power BI, utilizando as linguagens R e Python para modelagem, análise e visualização de dados. Desenvolvo relatórios e dashboards interativos, apoiando a tomada de decisões estratégicas com base em dados. Também ofereço serviços nessa área, ajudando empresas e profissionais a transformar dados brutos em informações valiosas e acessíveis.</p>
+                    Tenho conhecimentos em React.js, React Native e Expo, o que me permite desenvolver soluções
+                    completas para web e dispositivos móveis. Estou sempre buscando aprender novas tecnologias e
+                    aprimorar minhas habilidades, com o objetivo de criar soluções eficientes, inovadoras e centradas na
+                    experiência do usuário.
+
+                    Atualmente, participo de um curso promovido pela Oracle em parceria com a Alura, voltado para
+                    formação full stack. Esse programa oferece uma base sólida tanto em front-end quanto em back-end,
+                    reforçando minhas competências nas duas áreas.
+
+                    Além disso, possuo experiência com Power BI, utilizando as linguagens R e Python para modelagem,
+                    análise e visualização de dados. Desenvolvo relatórios e dashboards interativos, apoiando a tomada
+                    de decisões estratégicas com base em dados. Também ofereço serviços nessa área, ajudando empresas e
+                    profissionais a transformar dados brutos em informações valiosas e acessíveis.</p>
 
                 <div class="social-media">
-                    <a href="#"><i class='bx bxl-instagram' id="instagram"></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' id="linkedin"></i></a>
-                    <a href="#"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
-                    <a href="#"><i class='bx bxl-github' id="github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram' id="instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin' id="linkedin"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
+                    <a href="#" aria-label="GitHub"><i class='bx bxl-github' id="github"></i></a>
                 </div>
 
                 <div>
@@ -69,208 +85,220 @@
                 <img src="img/perfil.png" alt="Foto de perfil de Giovanni Santos">
             </div>
         </section>
-        <!-- /home section  -->
+        <!-- ===== /Home ===== -->
 
-        <!-- Service Section  -->
+        <!-- ===== Seção Serviços ===== -->
         <section class="services" id="services">
             <h2>Meus <span>Serviços</span></h2>
 
             <div class="services-container">
+
+                <!-- Card Front-end -->
                 <div class="services-box">
                     <div class="card-inner">
                         <div class="card-front">
-                            <i class='bx bx-code-alt'></i>
+                            <i class='bx bx-code-alt' aria-hidden="true"></i>
                             <h3>Front-end</h3>
-                            <p>Tenho habilidades sólidas em desenvolvimento web, com foco na criação de aplicações modernas, funcionais e responsivas. Domínio tecnologias como HTML, CSS e JavaScript, que utilizo para desenvolver interfaces dinâmicas, intuitivas e visualmente atrativas.
+                            <p>Tenho habilidades sólidas em desenvolvimento web, com foco na criação de aplicações
+                                modernas, funcionais e responsivas. Domínio tecnologias como HTML, CSS e JavaScript, que
+                                utilizo para desenvolver interfaces dinâmicas, intuitivas e visualmente atrativas.
 
-                                Possuo experiência com React.js, o que me permite criar aplicações reativas, escaláveis e com boa performance. Também tenho familiaridade com React Native e Expo, o que amplia minha atuação para o desenvolvimento de soluções multiplataforma, atendendo tanto ambientes web quanto mobile.
-                                
-                                Estou em constante evolução profissional, buscando sempre aprimorar meus conhecimentos para entregar projetos inovadores, eficientes e que ofereçam uma excelente experiência ao usuário.</p>
+                                Possuo experiência com React.js, o que me permite criar aplicações reativas, escaláveis
+                                e com boa performance. Também tenho familiaridade com React Native e Expo, o que amplia
+                                minha atuação para o desenvolvimento de soluções multiplataforma, atendendo tanto
+                                ambientes web quanto mobile.
+
+                                Estou em constante evolução profissional, buscando sempre aprimorar meus conhecimentos
+                                para entregar projetos inovadores, eficientes e que ofereçam uma excelente experiência
+                                ao usuário.</p>
                         </div>
                         <div class="card-back">
                             <div class="social-media">
-                                <i class='bx bxl-html5'></i>
-                                <i class='bx bxl-tailwind-css'></i>
-                                <i class='bx bxl-css3'></i>
-                                <i class='bx bxl-javascript'></i>
-                                <i class='bx bxl-react'></i>
+                                <i class='bx bxl-html5' aria-hidden="true"></i>
+                                <i class='bx bxl-tailwind-css' aria-hidden="true"></i>
+                                <i class='bx bxl-css3' aria-hidden="true"></i>
+                                <i class='bx bxl-javascript' aria-hidden="true"></i>
+                                <i class='bx bxl-react' aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div class="services-box">
+
+                <!-- Card Dados -->
+                <div class="services-box">
                     <div class="card-inner">
                         <div class="card-front">
-                            <i class='bx bx-code-alt'></i>
+                            <i class='bx bx-code-alt' aria-hidden="true"></i>
                             <h3>Dados</h3>
-                            <p>Tenho habilidades sólidas em ciência e análise de dados, com foco na criação de soluções modernas, funcionais e orientadas a resultados. Domino ferramentas e linguagens como Python, R e SQL, que utilizo para desenvolver análises estatísticas, modelagem preditiva e automação de processos de tratamento de dados.
+                            <p>Tenho habilidades sólidas em ciência e análise de dados, com foco na criação de soluções
+                                modernas, funcionais e orientadas a resultados. Domino ferramentas e linguagens como
+                                Python, R e SQL, que utilizo para desenvolver análises estatísticas, modelagem preditiva
+                                e automação de processos de tratamento de dados.
 
-                            Possuo experiência com Power BI, o que me permite criar dashboards interativos e visuais que facilitam a tomada de decisão estratégica. Também tenho familiaridade com Oracle Database e outros sistemas de gerenciamento de banco de dados, o que amplia minha atuação no processamento e integração de grandes volumes de informações, garantindo consistência, confiabilidade e performance.
+                                Possuo experiência com Power BI, o que me permite criar dashboards interativos e visuais
+                                que facilitam a tomada de decisão estratégica. Também tenho familiaridade com Oracle
+                                Database e outros sistemas de gerenciamento de banco de dados, o que amplia minha
+                                atuação no processamento e integração de grandes volumes de informações, garantindo
+                                consistência, confiabilidade e performance.
 
-                            Estou em constante evolução profissional, buscando sempre aprimorar meus conhecimentos em business intelligence, análise estatística e engenharia de dados, com o objetivo de entregar projetos inovadores, eficientes e que ofereçam insights de alto valor para as organizações.</p>
+                                Estou em constante evolução profissional, buscando sempre aprimorar meus conhecimentos
+                                em business intelligence, análise estatística e engenharia de dados, com o objetivo de
+                                entregar projetos inovadores, eficientes e que ofereçam insights de alto valor para as
+                                organizações.</p>
                         </div>
                         <div class="card-back">
                             <div class="social-media">
-                                <i class='bx bxl-python'></i>
-                                <i class='bx bxl-postgresql'></i>
+                                <i class='bx bxl-python' aria-hidden="true"></i>
+                                <i class='bx bxl-postgresql' aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Card Back-end -->
                 <div class="services-box" id="card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <i class='bx bx-code-curly'></i>
+                            <i class='bx bx-code-curly' aria-hidden="true"></i>
                             <h3>Back-end</h3>
-                            <p>Possuo habilidades sólidas tanto no desenvolvimento front-end quanto back-end, com experiência prática na construção de sistemas eficientes, escaláveis e de alta performance.
+                            <p>Possuo habilidades sólidas tanto no desenvolvimento front-end quanto back-end, com
+                                experiência prática na construção de sistemas eficientes, escaláveis e de alta
+                                performance.
 
-                                No back-end, trabalho com as linguagens Python e C++, além do banco de dados PostgreSQL. Utilizo Python para desenvolver APIs robustas e scripts de automação, empregando frameworks como Flask e Django para criar aplicações web seguras, ágeis e bem estruturadas.
-                                
-                                Tenho também experiência com C++, atuando em projetos que exigem manipulação de dados em baixo nível e otimização de desempenho, lidando com lógica complexa e foco em eficiência computacional.
-                                
-                                Sou familiarizado com o PostgreSQL, realizando modelagem de banco de dados, otimização de consultas e integração com sistemas diversos, assegurando a integridade e consistência dos dados.</p>
+                                No back-end, trabalho com as linguagens Python e C++, além do banco de dados PostgreSQL.
+                                Utilizo Python para desenvolver APIs robustas e scripts de automação, empregando
+                                frameworks como Flask e Django para criar aplicações web seguras, ágeis e bem
+                                estruturadas.
+
+                                Tenho também experiência com C++, atuando em projetos que exigem manipulação de dados em
+                                baixo nível e otimização de desempenho, lidando com lógica complexa e foco em eficiência
+                                computacional.
+
+                                Sou familiarizado com o PostgreSQL, realizando modelagem de banco de dados, otimização
+                                de consultas e integração com sistemas diversos, assegurando a integridade e
+                                consistência dos dados.</p>
                         </div>
                         <div class="card-back">
                             <div class="social-media">
-                                <i class='bx bxl-c-plus-plus'></i>
+                                <i class='bx bxl-c-plus-plus' aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
-        <!-- /Service Section  -->
+        <!-- ===== /Serviços ===== -->
 
-        <!-- Portfolio section  -->
+        <!-- ===== Seção Portfólio ===== -->
         <section class="Portfolio" id="Portifolio">
             <h2>Projetos <span>Feitos</span></h2>
 
             <div class="Portfolio-container">
-                <div class="Portfolio-box">
-                    <img src="img/todo-list.png" alt="Screenshot do projeto Todo-List">
 
+                <div class="Portfolio-box">
+                    <img src="img/todo-list.png" alt="Screenshot do projeto Todo-List" loading="lazy">
                     <div class="Portfolio-layer">
                         <h4>Todo-List</h4>
                         <p>Acesse o repositório do projeto</p>
-                        <a href="#" id="todo"><i class='bx bx-link-external'></i></a>
+                        <a href="#" id="todo" aria-label="Repositório Todo-List"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-                <div class="Portfolio-box">
-                    <img src="img/Dev_burger.png" alt="Screenshot do protótipo para hamburgueria">
 
+                <div class="Portfolio-box">
+                    <img src="img/Dev_burger.png" alt="Screenshot do protótipo para hamburgueria" loading="lazy">
                     <div class="Portfolio-layer">
                         <h4>Protótipo para Hamburgueria</h4>
                         <p>Acesse o site do projeto</p>
-                        <a href="#" id="hamb"><i class='bx bx-link-external'></i></a>
+                        <a href="#" id="hamb" aria-label="Site do projeto Hamburgueria"><i
+                                class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-                <!-- <div class="Portfolio-box">
-                    <img src="img/cronometro.jpg" alt="Screenshot do projeto Cronômetro">
-
-                    <div class="Portfolio-layer">
-                        <h4>Cronônometro</h4>
-                        <p>Acesse repositório do projeto</p>
-                        <a href="#" id="crono"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div> -->
 
                 <div class="Portfolio-box">
-                    <img src="img/felipe.png" alt="Screenshot do site do tatuador">
-
+                    <img src="img/felipe.png" alt="Screenshot do site do tatuador" loading="lazy">
                     <div class="Portfolio-layer">
                         <h4>Site desenvolvido para contar a história de um tatuador</h4>
                         <p>Acesse o site</p>
-                        <a href="#" id="Tatto"><i class='bx bx-link-external'></i></a>
+                        <a href="#" id="Tatto" aria-label="Site do tatuador"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-                <!-- <div class="Portfolio-box">
-                    <img src="img/js_projeto_inicial.png" alt="Screenshot do jogo do número secreto">
-
-                    <div class="Portfolio-layer">
-                        <h4>Jogo do número secreto</h4>
-                        <p>Acesse o repositório do projeto</p>
-                        <a href="#" id="js_alura"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div> -->
-                <!-- <div class="Portfolio-box">
-                    <img src="img/spotfy.jpg" alt="Screenshot do projeto Spotfy - Alura">
-
-                    <div class="Portfolio-layer">
-                        <h4>Spotfy - Alura</h4>
-                        <p>Acesse o repositório do projeto</p>
-                        <a href="#" id="repo_spot"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div> -->
 
                 <div class="Portfolio-box">
-                    <img src="img/controle.png" alt="Screenshot do projeto Controle de Despesas">
-
+                    <img src="img/controle.png" alt="Screenshot do projeto Controle de Despesas" loading="lazy">
                     <div class="Portfolio-layer">
                         <h4>Controle de Despesas</h4>
                         <p>Acesse o repositório do projeto</p>
-                        <a href="#" id="controle"><i class='bx bx-link-external'></i></a>
+                        <a href="#" id="controle" aria-label="Repositório Controle de Despesas"><i
+                                class='bx bx-link-external'></i></a>
                     </div>
                 </div>
+
             </div>
         </section>
+        <!-- ===== /Portfólio ===== -->
 
-        <!-- Certificações  -->
-        <section class="Portfolio" id="certicações"> 
-            <h2>Minhas <span>Certificações</span></h2> 
+        <!-- ===== Seção Certificações ===== -->
+        <section class="Portfolio" id="certicações">
+            <h2>Minhas <span>Certificações</span></h2>
 
-            <div class="Portfolio-container"> 
-                <div class="Portfolio-box"> 
-                    <img src="img/G8.png" alt="Certificado Lógica de Programação"> 
+            <div class="Portfolio-container">
 
-                    <div class="Portfolio-layer"> 
-                        <h4>Certificado Lógica de programação</h4> 
-                        <p>Acesse todos os certificados desta jornada</p> 
-                        <a href="cert.html"><i class='bx bx-link-external'></i></a>
-                    </div> 
-                </div> 
-                <div class="Portfolio-box"> 
-                    <img src="img/IMERSÃO.png" alt="Certificado Imersão Front-End 2º Edição"> 
-
-                    <div class="Portfolio-layer"> 
-                        <h4>Imersão Front-End 2º Edição</h4> 
-                    </div> 
+                <div class="Portfolio-box">
+                    <img src="img/G8.png" alt="Certificado Lógica de Programação" loading="lazy">
+                    <div class="Portfolio-layer">
+                        <h4>Certificado Lógica de programação</h4>
+                        <p>Acesse todos os certificados desta jornada</p>
+                        <a href="cert.html" aria-label="Ver certificados de Lógica de Programação"><i
+                                class='bx bx-link-external'></i></a>
+                    </div>
                 </div>
-                <div class="Portfolio-box"> 
-                    <img src="img/nlw.png" alt="Certificado NLW"> 
 
-                    <div class="Portfolio-layer"> 
-                        <h4>Certificado NLW React com Next.js</h4> 
-                    </div> 
-                </div>  
-                <div class="Portfolio-box"> 
-                    <img src="img/certificado_logistica.jpg" alt="Certificado de conclusão de curso técnico em logística"> 
+                <div class="Portfolio-box">
+                    <img src="img/IMERSÃO.png" alt="Certificado Imersão Front-End 2º Edição" loading="lazy">
+                    <div class="Portfolio-layer">
+                        <h4>Imersão Front-End 2º Edição</h4>
+                    </div>
+                </div>
 
-                    <div class="Portfolio-layer"> 
-                        <h4>Certificado de conclusão de curso técnico em logística</h4> 
-                    </div> 
-                </div> 
-                <div class="Portfolio-box"> 
-                    <img src="img/Cert-powerbi.png" alt="Microsoft Power BI Para Business Intelligence e Data Science"> 
+                <div class="Portfolio-box">
+                    <img src="img/nlw.png" alt="Certificado NLW React com Next.js" loading="lazy">
+                    <div class="Portfolio-layer">
+                        <h4>Certificado NLW React com Next.js</h4>
+                    </div>
+                </div>
 
-                    <div class="Portfolio-layer"> 
-                        <h4>Microsoft Power BI Para Business Intelligence e Data Science</h4> 
-                    </div> 
-                </div> 
-            </div> 
-        </section> 
-        <!-- /Certificações  -->
+                <div class="Portfolio-box">
+                    <img src="img/certificado_logistica.jpg"
+                        alt="Certificado de conclusão de curso técnico em logística" loading="lazy">
+                    <div class="Portfolio-layer">
+                        <h4>Certificado de conclusão de curso técnico em logística</h4>
+                    </div>
+                </div>
 
-        <!-- contact section   -->
+                <div class="Portfolio-box">
+                    <img src="img/Cert-powerbi.png" alt="Microsoft Power BI Para Business Intelligence e Data Science"
+                        loading="lazy">
+                    <div class="Portfolio-layer">
+                        <h4>Microsoft Power BI Para Business Intelligence e Data Science</h4>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ===== /Certificações ===== -->
+
+        <!-- ===== Seção Contato ===== -->
         <section class="contact" id="contact">
             <h2>Me <span>Contate</span></h2>
 
             <form>
                 <div class="input-box">
-                    <input type="name" placeholder="Nome Completo" id="name" required>
+                    <input type="text" placeholder="Nome Completo" id="name" required>
                     <input type="email" placeholder="E-Mail" id="email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Número de telefone" id="number" required>
+                    <input type="tel" placeholder="Número de telefone" id="number" required>
                     <input type="text" placeholder="Assunto" id="assunto" required>
                 </div>
                 <textarea cols="30" rows="8" placeholder="Mensagem" id="mensagem" required></textarea>
@@ -278,34 +306,25 @@
                 <a href="#" class="btn" id="enviar_mensagem" onclick="sendMail()">Enviar Mensagem</a>
             </form>
         </section>
-        <!-- /contact section  -->
-
-        <!-- about section  -->
-        <!-- <section class="about" id="about">
-            <div class="about-img">
-                <img src="img/perfil.png" alt="Sobre mim - Giovanni Santos">
-            </div>
-
-            <div class="about-content">
-                <h3><span>Sobre</span> mim :</h3>
-                <h1>Desenvolvedor <span>Front-End</span></h1>
-                <p>Estudante de Engenharia de Computação, com foco em desenvolvimento web e criação de aplicações interativas, modernas e responsivas. Apaixonado por tecnologia, com interesse contínuo em aprendizado e inovação no desenvolvimento front-end e back-end.</p>
-            </div>
-        </section> -->
-        <!-- /about section  -->
+        <!-- ===== /Contato ===== -->
 
     </main>
 
-    <footer>Copyright &copy; 2025 by &lt;/Giovanni&gt;, ALL rights Reserved.</footer>
+    <footer>
+        <p>Copyright &copy; 2025 by &lt;/Giovanni&gt;, ALL rights Reserved.</p>
+    </footer>
 
+    <!-- Scripts -->
     <script src="js/script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init({
                 publicKey: "T_1lXY9nyVcG459jf",
             });
         })();
     </script>
+
 </body>
+
 </html>

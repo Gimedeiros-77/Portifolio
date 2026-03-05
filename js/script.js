@@ -4,6 +4,8 @@ const nav = document.querySelector('.nav-responsive');
 menuHamburguer.addEventListener('click', () => {
     menuHamburguer.classList.toggle('change');
     nav.classList.toggle('active');
+    const isOpen = nav.classList.contains('active');
+    menuHamburguer.setAttribute('aria-expanded', isOpen);
 });
 
 // Função para abrir links
@@ -30,7 +32,7 @@ abrirLink("controle", "https://github.com/Gimedeiros-77/Controle_despesas");
 // Função de download do CV
 const downloadCV = document.getElementById('Download CV');
 if (downloadCV) {
-    downloadCV.addEventListener('click', function(event) {
+    downloadCV.addEventListener('click', function (event) {
         event.preventDefault();
 
         const fileUrl = 'documents/Giovanni pdf-1.pdf';
